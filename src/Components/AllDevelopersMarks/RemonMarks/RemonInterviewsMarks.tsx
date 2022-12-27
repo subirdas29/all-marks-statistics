@@ -34,9 +34,8 @@ export const data = {
 const RemonInterviewsMarks = () => {
     return (
         <div>
-        <Box color='.50' >
+        <Box>
         <Pie data={data} /></Box>
-        <Text textAlign={[ 'center' ]} />joy
         </div>
     );
 };

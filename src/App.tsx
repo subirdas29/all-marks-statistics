@@ -11,7 +11,7 @@ import {
 } from "@chakra-ui/react"
 import { ColorModeSwitcher } from "./ColorModeSwitcher"
 import { Logo } from "./Logo"
-import Statistics from "./Components/Statistics"
+
 import Home from "./Components/Home/Home"
 
 export const App = () => (
