@@ -12,14 +12,18 @@ const RemonAllMarks = () => {
         <div>
             <Box backgroundColor='#24273D' m={[10, 12]} p={[4, 6]}>
             <Text textAlign={[ 'left', 'center' ]}>Remon Marks</Text>
-            <SimpleGrid columns={[2, null, 2]} spacing='40px' >
-            <RemonInterviewsMarks></RemonInterviewsMarks>
+            <SimpleGrid columns={[1, null, 2]} spacing='40px' >
             <RemonJobApply></RemonJobApply>
+            <RemonInterviewsMarks></RemonInterviewsMarks>
+            
+            </SimpleGrid>
+            <SimpleGrid columns={[2, null, 3]} >
             <FirstProjectMarks></FirstProjectMarks>
             <SecondProjectMarks></SecondProjectMarks>
             <ThirdProjectMarks></ThirdProjectMarks>
-            <AllProjectMarks></AllProjectMarks>
             </SimpleGrid>
+            <AllProjectMarks></AllProjectMarks>
+            
             </Box>
         </div>
     );
