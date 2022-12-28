@@ -1,14 +1,26 @@
 import React from 'react';
 import { Chart as ChartJS, ArcElement, Tooltip, Legend } from 'chart.js';
-import { Pie } from 'react-chartjs-2';
+import { Line} from 'react-chartjs-2';
 import { Box } from '@chakra-ui/react';
 ChartJS.register(ArcElement, Tooltip, Legend);
+export const options = {
+    responsive: true,
+    plugins: {
+      legend: {
+        position: 'top' as const,
+      },
+      title: {
+        display: true,
+        text: 'Chart.js Line Chart',
+      },
+    },
+  };
 export const data = {
     labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
     datasets: [
       {
         label: '# of Votes',
-        data: [70,20],
+        data: [70,20,30,40,60],
         backgroundColor: [
           'rgba(255, 99, 132, 0.2)',
           'rgba(54, 162, 235, 0.2)',
@@ -33,7 +45,7 @@ export const data = {
   };
 
 const TotalAvarageMarks = () => {
-    return <Box w="100%" h="80vh"><Pie data={data} /></Box>
+    return <Box w="100%" h="80vh"><Line data={data} /></Box>
 };
 
 export default TotalAvarageMarks;

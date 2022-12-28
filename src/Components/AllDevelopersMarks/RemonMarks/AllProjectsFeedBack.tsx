@@ -11,13 +11,14 @@ import {
     Button,
     Text,
     Box,
+    Flex,
   } from '@chakra-ui/react'
 
 const AllProjectsFeedBack = () => {
     const { isOpen, onOpen, onClose } = useDisclosure()
     return (
         <>
-        <Box display="flex" alignItems="center"><Button onClick={onOpen}>Projects Feed Back</Button></Box>
+        <Flex align="center" justify="center"><Button onClick={onOpen}>Projects Feed Back</Button></Flex>
   
         <Modal isOpen={isOpen} onClose={onClose}>
           <ModalOverlay />
