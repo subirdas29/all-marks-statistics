@@ -3,23 +3,12 @@ import { Chart as ChartJS, ArcElement, Tooltip, Legend } from 'chart.js';
 import { Line} from 'react-chartjs-2';
 import { Box } from '@chakra-ui/react';
 ChartJS.register(ArcElement, Tooltip, Legend);
-export const options = {
-    responsive: true,
-    plugins: {
-      legend: {
-        position: 'top' as const,
-      },
-      title: {
-        display: true,
-        text: 'Chart.js Line Chart',
-      },
-    },
-  };
+
 export const data = {
-    labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
+    labels: ['Interview','Job-Apply','Projects'],
     datasets: [
       {
-        label: '# of Votes',
+        label: 'Avarage Marks',
         data: [70,20,30,40,60],
         backgroundColor: [
           'rgba(255, 99, 132, 0.2)',
@@ -43,9 +32,34 @@ export const data = {
       },
     ],
   };
+  const options = {
+    plugin:{
+     legend:true
+    },
+       scales: {
+         y: {
+          
+           grid:
+           {
+             color:'rgba(17, 20, 26)',
+             opacity:0.5
+           }
+         },
+         x: {
+          
+           grid:
+           {
+             color:'rgba(17, 20, 26)',
+             opacity:0.5
+           }
+         }
+       }
+     }
+
 
 const TotalAvarageMarks = () => {
-    return <Box w="100%" h="80vh"><Line data={data} /></Box>
+    return <Box w="100%" boxShadow='dark-lg' p='4' rounded='md' display='flex' alignItems="center" justifyContent="center"  bg='black' h="60vh">
+        <Line style={{height:'100%',width:'100%'}} options= {options} data={data} /></Box>
 };
 
 export default TotalAvarageMarks;

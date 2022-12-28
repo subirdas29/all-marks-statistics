@@ -1,30 +1,32 @@
 import { Box, SimpleGrid, Text } from '@chakra-ui/react';
 import React from 'react';
 import AllProjectsFeedBack from './AllProjectsFeedBack';
-import AllProjectMarks from './ProjectMarks/AllProjectMarks';
+
 import FirstProjectMarks from './ProjectMarks/FirstProjectMarks';
 import SecondProjectMarks from './ProjectMarks/SecondProjectMarks';
 import ThirdProjectMarks from './ProjectMarks/ThirdProjectMarks';
-import RemonInterviewsMarks from './RemonInterviewsMarks';
+import RemonInterviewMarks from './RemonInterviewMarks';
 import RemonJobApply from './RemonJobApply';
+
 import TotalAvarageMarks from './TotalAvarageMarks';
 
 const RemonAllMarks = () => {
     return (
         <div>
             <Box backgroundColor='#24273D' m={[10, 12]} p={[4, 6]}>
-            <Text textAlign={[ 'left', 'center' ]}>Remon Marks</Text>
-            <SimpleGrid columns={[1, null, 2]} spacing='40px' >
+            <Text textAlign={[ 'left', 'center' ]} mb='40px' fontSize={32}>Remon Marks</Text>
+            <SimpleGrid columns={[1, null, 2]} gap='40px' >
+            
+            <RemonInterviewMarks></RemonInterviewMarks>
             <RemonJobApply></RemonJobApply>
-            <RemonInterviewsMarks></RemonInterviewsMarks>
             
             </SimpleGrid>
-            <SimpleGrid columns={[2, null, 3]} >
+            <SimpleGrid columns={[2, null, 3]} gap='40px'  my="40px">
             <FirstProjectMarks></FirstProjectMarks>
             <SecondProjectMarks></SecondProjectMarks>
             <ThirdProjectMarks></ThirdProjectMarks>
             </SimpleGrid>
-            <AllProjectMarks></AllProjectMarks>
+         
             <AllProjectsFeedBack></AllProjectsFeedBack>
             <TotalAvarageMarks></TotalAvarageMarks>
             

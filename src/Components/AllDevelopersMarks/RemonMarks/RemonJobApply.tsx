@@ -1,58 +1,73 @@
-import { Line } from "react-chartjs-2";
-
+import React from 'react';
 import {
   Chart as ChartJS,
   CategoryScale,
   LinearScale,
-  PointElement,
-  LineElement,
+  BarElement,
   Title,
   Tooltip,
-  Legend
-} from "chart.js";
-import { useRef } from "react";
-import { Box, flexbox } from "@chakra-ui/react";
+  Legend,
+} from 'chart.js';
+import { useState } from 'react';
+import { Bar } from 'react-chartjs-2';
+import { Box } from '@chakra-ui/react';
+
 
 ChartJS.register(
   CategoryScale,
   LinearScale,
-  PointElement,
-  LineElement,
+  BarElement,
   Title,
   Tooltip,
   Legend
 );
-
-export const data = {
-  labels: ["Jan", "Feb", "Mar", "Apr", "May", "Jun"],
-  datasets: [
-    {
-      label: "First dataset",
-      data: [33, 53, 85, 41, 44, 65],
-      fill: true,
-      backgroundColor: "rgba(75,192,192,0.2)",
-      borderColor: "rgba(75,192,192,1)"
+export const RemonJobApply: React.FC<{}> = () => {
+  const labels = ["20/12/22", "21/12/22", "22/12/22", "23/12/22", "24/12/22", "25/12/22","26/12/22","27/12/22","28/12/22","29/12/22","30/12/22"];
+  const [data, setData] = useState({
+    labels: labels,
+    datasets: [{
+      label: 'Job Apply in per Day',
+      data: [20,15,10,14,12,16,17,18,20,12,17],
+      backgroundColor: [
+        'rgb(153, 102, 255)'
+      ],
+      borderColor: [
+        'rgb(153, 102, 255)'
+      ],
+      responsive:true,
+      maintainAspectRatio:false,
+      borderWidth: 1
+    }]
+  });
+  const options = {
+    plugin:{
+     legend:true
     },
-    {
-      label: "Second dataset",
-      data: [33, 25, 35, 51, 54, 76],
-      fill: false,
-      borderColor: "#742774"
-    }
-  ]
-};
-
-const RemonJobApply= () => {
-
-  const chartRef = useRef<ChartJS<"line", number[], string>>(null);
-
+       scales: {
+         y: {
+          
+           grid:
+           {
+             color:'rgba(17, 20, 26)',
+             opacity:0.5
+           }
+         },
+         x: {
+          
+           grid:
+           {
+             color:'rgba(17, 20, 26)',
+             opacity:0.5
+           }
+         }
+       }
+     }
 
   return (
-    <div>
-<Box w='100%' display='flex' alignItems="center" justifyContent="center" h='40vh'><Line style={{height:'100%'}} data={data} ref={chartRef} /></Box>
-      
-    </div>
-  );
-}
+
+  <Box w='100%' boxShadow='dark-lg' p='4' rounded='md' bg='black' h='40vh' display='flex' alignItems="center" justifyContent="center"  ><Bar style={{height:'100%'}}data={data} options={options}/></Box>
+
+
+)};
 
 export default RemonJobApply;
