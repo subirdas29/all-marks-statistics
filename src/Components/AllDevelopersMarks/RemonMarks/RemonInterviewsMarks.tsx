@@ -41,7 +41,7 @@ export const RemonInterviewsMarks: React.FC<{}> = () => {
 
   return (
 
-  <Box w='100%' m='0 auto' h='40vh'><Bar  data={data} /></Box>
+  <Box w='100%' h='40vh' display='flex' alignItems="center" justifyContent="center"  ><Bar style={{height:'100%'}}data={data} /></Box>
 
 
 )};

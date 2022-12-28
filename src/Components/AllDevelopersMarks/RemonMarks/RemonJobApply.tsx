@@ -11,6 +11,7 @@ import {
   Legend
 } from "chart.js";
 import { useRef } from "react";
+import { Box, flexbox } from "@chakra-ui/react";
 
 ChartJS.register(
   CategoryScale,
@@ -47,9 +48,9 @@ const RemonJobApply= () => {
 
 
   return (
-    <div className="App">
-
-      <Line data={data} ref={chartRef} />
+    <div>
+<Box w='100%' display='flex' alignItems="center" justifyContent="center" h='40vh'><Line style={{height:'100%'}} data={data} ref={chartRef} /></Box>
+      
     </div>
   );
 }

@@ -6,9 +6,11 @@ import { Box, Text } from '@chakra-ui/react';
 ChartJS.register(ArcElement, Tooltip, Legend);
 
 export const data = {
-  labels: ['Masud', 'Mehidi', 'Subir','minhajmia' ],
+  labels: ['Masud', 'Mehidi', 'Subir','minhajmia'],
+
   datasets: [
     {
+
       label: `Marks`,
       data: [8,10,7,9],
       backgroundColor: [
@@ -34,7 +36,8 @@ export const data = {
 
 
 const FirstProjectMarks = () => {
-    return <Box p={5} mt={6} textAlign={[ 'left', 'center' ]} > <Doughnut data={data} /><Text mt={5}>First Project</Text></Box>;
+
+    return <Box w='100%' p={2} textAlign={[ 'left', 'center' ]} > <Doughnut style={{height:'100%',width:'100%'}} data={data} /><Text mt={5}>First Project</Text></Box>;
 };
 
 export default FirstProjectMarks;

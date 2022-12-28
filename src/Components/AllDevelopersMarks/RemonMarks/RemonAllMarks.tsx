@@ -1,11 +1,13 @@
 import { Box, SimpleGrid, Text } from '@chakra-ui/react';
 import React from 'react';
+import AllProjectsFeedBack from './AllProjectsFeedBack';
 import AllProjectMarks from './ProjectMarks/AllProjectMarks';
 import FirstProjectMarks from './ProjectMarks/FirstProjectMarks';
 import SecondProjectMarks from './ProjectMarks/SecondProjectMarks';
 import ThirdProjectMarks from './ProjectMarks/ThirdProjectMarks';
 import RemonInterviewsMarks from './RemonInterviewsMarks';
 import RemonJobApply from './RemonJobApply';
+import TotalAvarageMarks from './TotalAvarageMarks';
 
 const RemonAllMarks = () => {
     return (
@@ -23,6 +25,8 @@ const RemonAllMarks = () => {
             <ThirdProjectMarks></ThirdProjectMarks>
             </SimpleGrid>
             <AllProjectMarks></AllProjectMarks>
+            <AllProjectsFeedBack></AllProjectsFeedBack>
+            <TotalAvarageMarks></TotalAvarageMarks>
             
             </Box>
         </div>

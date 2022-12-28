@@ -32,7 +32,7 @@ export const data = {
 
 
 const SecondProjectMarks = () => {
-  return <Box p={5} mt={6} textAlign={[ 'left', 'center' ]}><Doughnut data={data} /><Text mt={6}>Second Project</Text></Box>; 
+  return <Box w='100%' p={2} textAlign={[ 'left', 'center' ]}><Doughnut style={{height:'100%',width:'100%'}}  data={data} /><Text mt={6}>Second Project</Text></Box>; 
 };
 
 export default SecondProjectMarks;

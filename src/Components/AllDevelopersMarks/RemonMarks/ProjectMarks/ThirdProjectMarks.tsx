@@ -31,7 +31,7 @@ export const data = {
 };
 
 const ThirdProjectMarks = () => {
-  return <Box p={5} mt={6} textAlign={[ 'left', 'center' ]}><Doughnut data={data} /><Text mt={6}>Third Project</Text></Box>; 
+  return <Box w='100%' p={2} textAlign={[ 'left', 'center' ]}><Doughnut style={{height:'100%',width:'100%'}}  data={data} /><Text mt={6}>Third Project</Text></Box>; 
 };
 
 export default ThirdProjectMarks;
