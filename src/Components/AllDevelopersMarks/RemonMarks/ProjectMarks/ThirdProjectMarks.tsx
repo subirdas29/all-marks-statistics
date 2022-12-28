@@ -12,17 +12,11 @@ export const data = {
       label: `Marks`,
       data: [8,10,7,9],
       backgroundColor: [
-        'rgba(255, 99, 132, 0.2)',
-        'rgba(54, 162, 235, 0.2)',
-        'rgba(255, 206, 86, 0.2)',
-        'rgba(255, 99, 132, 0.2)',
+        '#F94264','#EC9D52','#51576C','#1B8EF9',
         
       ],
       borderColor: [
-        'rgba(255, 99, 132, 1)',
-        'rgba(54, 162, 235, 1)',
-        'rgba(255, 206, 86, 1)',
-        'rgba(255, 99, 132, 1)',
+        '#F94264','#EC9D52','#51576C','#1B8EF9',
        
       ],
       borderWidth: 1,
@@ -31,7 +25,7 @@ export const data = {
 };
 
 const ThirdProjectMarks = () => {
-  return <Box w='100%' boxShadow='dark-lg' p='4' rounded='md' bg='black' textAlign={[ 'left', 'center' ]}><Doughnut style={{height:'100%',width:'100%'}}  data={data} /><Text mt={6}>Third Project</Text></Box>; 
+  return <Box w='100%' boxShadow='dark-lg' p='4' rounded='md' backgroundColor='#111827' textAlign={[ 'left', 'center' ]}><Doughnut style={{height:'100%',width:'100%'}}  data={data} /><Text mt={6}>Third Project</Text></Box>; 
 };
 
 export default ThirdProjectMarks;

@@ -29,43 +29,21 @@ export const RemonJobApply: React.FC<{}> = () => {
       label: 'Job Apply in per Day',
       data: [20,15,10,14,12,16,17,18,20,12,17],
       backgroundColor: [
-        'rgb(153, 102, 255)'
+        '#1B8EF9','#51576C','#51576C','#F94264','#51576C','#EC9D52','#51576C', '#1B8EF9','#51576C','#F94264','#51576C',
       ],
       borderColor: [
-        'rgb(153, 102, 255)'
+        '#1B8EF9','#51576C','#51576C','#F94264','#51576C','#EC9D52','#51576C', '#1B8EF9','#51576C','#F94264','#51576C',
       ],
       responsive:true,
       maintainAspectRatio:false,
       borderWidth: 1
     }]
   });
-  const options = {
-    plugin:{
-     legend:true
-    },
-       scales: {
-         y: {
-          
-           grid:
-           {
-             color:'rgba(17, 20, 26)',
-             opacity:0.5
-           }
-         },
-         x: {
-          
-           grid:
-           {
-             color:'rgba(17, 20, 26)',
-             opacity:0.5
-           }
-         }
-       }
-     }
+ 
 
   return (
 
-  <Box w='100%' boxShadow='dark-lg' p='4' rounded='md' bg='black' h='40vh' display='flex' alignItems="center" justifyContent="center"  ><Bar style={{height:'100%'}}data={data} options={options}/></Box>
+  <Box w='100%' boxShadow='dark-lg' p='4' rounded='md' backgroundColor='#111827' h='40vh' display='flex' alignItems="center" justifyContent="center"  ><Bar style={{height:'100%'}}data={data} /></Box>
 
 
 )};

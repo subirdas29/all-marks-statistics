@@ -30,8 +30,8 @@ export const data = {
       label: "Interview Marks",
       data: [60,65,60,62],
       fill: true,
-      backgroundColor: "rgba(75,192,192,0.5)",
-      borderColor: "rgba(75,192,192,1)",
+      backgroundColor: '#F56D20',
+      borderColor:'#EC9D52',
       tension:0.5
     },
     
@@ -70,7 +70,7 @@ const RemonInterviewMarks= () => {
 
   return (
     <div>
-<Box w='100%' boxShadow='dark-lg' p='4' rounded='md' bg='black' display='flex' alignItems="center" justifyContent="center" h='40vh'><Line style={{height:'100%'}} data={data} options={options} ref={chartRef} /></Box>
+<Box w='100%' boxShadow='dark-lg' p='4' rounded='md' backgroundColor='#111827' display='flex' alignItems="center" justifyContent="center" h='40vh'><Line style={{height:'100%'}} data={data} options={options} ref={chartRef} /></Box>
       
     </div>
   );

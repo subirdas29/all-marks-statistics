@@ -11,20 +11,10 @@ export const data = {
         label: 'Avarage Marks',
         data: [70,20,30,40,60],
         backgroundColor: [
-          'rgba(255, 99, 132, 0.2)',
-          'rgba(54, 162, 235, 0.2)',
-          'rgba(255, 206, 86, 0.2)',
-          'rgba(75, 192, 192, 0.2)',
-          'rgba(153, 102, 255, 0.2)',
-          'rgba(255, 159, 64, 0.2)',
+         '#FF1D46'
         ],
         borderColor: [
-          'rgba(255, 99, 132, 1)',
-          'rgba(54, 162, 235, 1)',
-          'rgba(255, 206, 86, 1)',
-          'rgba(75, 192, 192, 1)',
-          'rgba(153, 102, 255, 1)',
-          'rgba(255, 159, 64, 1)',
+          '#FF1D46'
         ],
         responsive:true,
         maintainAspectRatio:false,
@@ -36,29 +26,29 @@ export const data = {
     plugin:{
      legend:true
     },
-       scales: {
-         y: {
-          
-           grid:
-           {
-             color:'rgba(17, 20, 26)',
-             opacity:0.5
-           }
-         },
-         x: {
-          
-           grid:
-           {
-             color:'rgba(17, 20, 26)',
-             opacity:0.5
-           }
-         }
-       }
+    scales: {
+        y: {
+         
+          grid:
+          {
+            color:'rgba(17, 20, 26)',
+            opacity:0.5
+          }
+        },
+        x: {
+         
+          grid:
+          {
+            color:'rgba(17, 20, 26)',
+            opacity:0.5
+          }
+        }
+      }
      }
 
 
 const TotalAvarageMarks = () => {
-    return <Box w="100%" boxShadow='dark-lg' p='4' rounded='md' display='flex' alignItems="center" justifyContent="center"  bg='black' h="60vh">
+    return <Box w="100%" boxShadow='dark-lg' p='4' rounded='md' display='flex' alignItems="center" justifyContent="center"  backgroundColor='#111827' h="60vh">
         <Line style={{height:'100%',width:'100%'}} options= {options} data={data} /></Box>
 };
 
