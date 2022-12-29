@@ -14,7 +14,7 @@ const RemonAllMarks = () => {
     return (
         <div>
             <Box backgroundColor='#1F2937' m={[10, 12]} p={[4, 6]}>
-            <Text textAlign={[ 'left', 'center' ]} mb='40px' fontSize={32} color='#D3D4DA'>Remon Marks</Text>
+            <Text textAlign={[ 'left', 'center' ]} mb='40px' fontWeight="bold" fontSize={32} color='#D3D4DA'>Remon Marks</Text>
             <SimpleGrid columns={[1, null, 2]} gap='40px' >
             
             <RemonInterviewMarks></RemonInterviewMarks>

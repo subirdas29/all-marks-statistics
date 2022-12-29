@@ -11,8 +11,8 @@ import TotalAvarageMarks from './TotalAvarageMarks';
 const SubirAllMarks = () => {
     return (
         <div>
-            <Box backgroundColor='#1F2937' m={[10, 12]} p={[4, 6]}>
-            <Text textAlign={[ 'left', 'center' ]} mb='40px' fontSize={32} color='#D3D4DA'>Subir Das Marks</Text>
+            <Box backgroundColor='#1F2937' mx='12' mt='24' p={[4, 6]}>
+            <Text textAlign={[ 'left', 'center' ]} fontWeight="bold" mb='40px' fontSize={32} color='#D3D4DA'>Subir Das Marks</Text>
             <SimpleGrid columns={[1, null, 2]} gap='40px' >
             
             <SubirInterviewMarks></SubirInterviewMarks>
