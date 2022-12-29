@@ -18,7 +18,7 @@ const AllProjectsFeedBack = () => {
     const { isOpen, onOpen, onClose } = useDisclosure()
     return (
         <>
-        <Flex align="center" justify="center" ><Button onClick={onOpen} mb='40px' backgroundColor='#111827' boxShadow='dark-lg' p='4' rounded='md' ><Text color='#D3D4DA'>Projects FeedBacks</Text></Button></Flex>
+        <Flex align="center" justify="center" ><Button onClick={onOpen} border='1px'  borderColor='#51576C'  mb='40px' backgroundColor='#111827' boxShadow='dark-lg' p='4' rounded='md' ><Text color='#D3D4DA'>Projects FeedBacks</Text></Button></Flex>
         
         <Modal isOpen={isOpen} onClose={onClose}>
           <ModalOverlay />

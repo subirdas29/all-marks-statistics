@@ -11,7 +11,7 @@ import TotalAvarageMarks from './TotalAvarageMarks';
 const MasudAllMarks = () => {
     return (
         <div>
-            <Box backgroundColor='#1F2937' mx='12' mt='24' p={[4, 6]}>
+            <Box backgroundColor='#1F2937' mx='12' mt='24' p={[4, 6]} boxShadow='2xl' rounded='md'>
             <Text textAlign={[ 'left', 'center' ]} fontWeight="bold" mb='40px' fontSize={32} color='#D3D4DA'>Masud Marks</Text>
             <SimpleGrid columns={[1, null, 2]} gap='40px' >
             
