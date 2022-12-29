@@ -11,7 +11,7 @@ import {
   Legend
 } from "chart.js";
 import { useRef } from "react";
-import { Box, flexbox } from "@chakra-ui/react";
+import { Box, flexbox, Text } from "@chakra-ui/react";
 
 ChartJS.register(
   CategoryScale,
@@ -70,7 +70,10 @@ const RemonInterviewMarks= () => {
 
   return (
     <div>
-<Box w='100%' boxShadow='dark-lg' p='4' rounded='md' backgroundColor='#111827' display='flex' alignItems="center" justifyContent="center" h='40vh'><Line style={{height:'100%'}} data={data} options={options} ref={chartRef} /></Box>
+      
+<Box w='100%' boxShadow='dark-lg' p='4' rounded='md' backgroundColor='#111827' display='flex' alignItems="center" justifyContent="center"  h='40vh' >
+
+<Line style={{height:'100%'}} data={data} options={options} ref={chartRef} /></Box>
       
     </div>
   );
