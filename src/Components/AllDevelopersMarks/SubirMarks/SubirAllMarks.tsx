@@ -17,7 +17,6 @@ const SubirAllMarks = () => {
             
             <SubirInterviewMarks></SubirInterviewMarks>
             <SubirJobApply></SubirJobApply>
-            
             </SimpleGrid>
             <SimpleGrid columns={[2, null, 3]} gap='40px'  my="40px">
             <FirstProjectMarks></FirstProjectMarks>
