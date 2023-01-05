@@ -31,7 +31,7 @@ export const data = {
 
 const FirstProjectMarks = () => {
 
-    return <Box w='100%' boxShadow='dark-lg' p='4' rounded='md' backgroundColor='#111827'  textAlign={[ 'left', 'center' ]} > <Doughnut style={{height:'100%',width:'100%'}} data={data} /><Text mt={5}>First Project</Text></Box>;
+    return <Box w='100%' boxShadow='dark-lg' p='4' rounded='md' backgroundColor='#111827'  textAlign={[ 'left', 'center' ]} > <Doughnut style={{height:'100%',width:'100%'}} data={data} /><Text color="#B2B5BA" mt={5}>First Project</Text></Box>;
 };
 
 export default FirstProjectMarks;

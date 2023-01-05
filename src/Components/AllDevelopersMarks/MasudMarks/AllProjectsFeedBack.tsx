@@ -48,7 +48,7 @@ Project 3: Work on the Ui. And add a footer and add 6 more sections. " --- (Minh
             </ModalBody>
   
             <ModalFooter>
-              <Button colorScheme='blue' mr={3} onClick={onClose}>
+              <Button colorScheme='#111827' mr={3} onClick={onClose}>
                 Close
               </Button>
             
