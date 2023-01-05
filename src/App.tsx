@@ -7,15 +7,19 @@ import {
   VStack,
   Code,
   Grid,
-  theme,
+ theme
+  
 } from "@chakra-ui/react"
 import { ColorModeSwitcher } from "./ColorModeSwitcher"
 import { Logo } from "./Logo"
 
 import Home from "./Components/Home/Home"
 
+
 export const App = () => (
-  <ChakraProvider theme={theme}>
+  
+    <ChakraProvider theme={theme} >
     <Home></Home>
   </ChakraProvider>
+ 
 )
